@@ -8,8 +8,7 @@
 
 /* ==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== */
-
+   ========================================================================== */§
 html {
     color: #222;
     font-size: 1em;
@@ -106,18 +105,35 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
-  background-color: black;
+  background-color: #100f10;
 }
 
-.wrapper {
+.heading {
+    display: flex;
+    display: inline-block;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.2em;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.introduction {
+    display: flex;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.item-wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
   display: flex;
   justify-content: space-between;
-  border-top: solid white 1px;
-  border-bottom: solid white 1px;
-  padding: 20px 0px;
+  font-weight: 700;
+  padding: 2% 0%;
 }
+
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
@@ -126,7 +142,7 @@ body {
   font-size: 1em;
   height: 300px;
   display: flex;
-  width: 33.3%;
+  width: 30%;
   justify-content: center;
   align-items: center;
   padding: 0 3%;
@@ -135,6 +151,34 @@ body {
 .div-2, .div-3 {
     border-left: solid 0.5px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.social-links ul {
+    color: white;
+}
+
+.social-links ul li {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.social-links ul li i {
+    color: white;
+}
+
+ /*
+.copyright {
+    color: white;
+    clear: both;
+} */
 
 
 
